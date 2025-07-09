@@ -5,7 +5,11 @@
 
 # **************************************************************************************
 
-from typing import TypedDict
+from typing import Generic, List, NotRequired, TypedDict, TypeVar
+
+# **************************************************************************************
+
+T = TypeVar("T", bound=object)
 
 # **************************************************************************************
 
@@ -46,6 +50,22 @@ class StatusCode(TypedDict):
 
     # The numeric value of the status code:
     value: int
+
+
+# **************************************************************************************
+
+
+class Variant(TypedDict, Generic[T]):
+    """
+    Represents a typed value with optional array dimensions, parameterized by T.
+    """
+
+    # The underlying value, which can be a scalar or a list:
+    value: T
+    # The built-in DataType ID:
+    datatype: int
+    # Optional dimensions if the value is an array:
+    array_dimensions: NotRequired[List[int]]
 
 
 # **************************************************************************************
