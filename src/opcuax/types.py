@@ -36,3 +36,16 @@ class QualifiedName(TypedDict):
 
 
 # **************************************************************************************
+
+
+class StatusCode(TypedDict):
+    """
+    Status code returned by service calls or value operations as defined in the
+    OPC UA specification.
+    """
+
+    # The numeric value of the status code:
+    value: int
+
+
+# **************************************************************************************
