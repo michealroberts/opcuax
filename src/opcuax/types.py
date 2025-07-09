@@ -22,3 +22,17 @@ class NodeId(TypedDict):
 
 
 # **************************************************************************************
+
+
+class QualifiedName(TypedDict):
+    """
+    A name qualified by namespace for use in browses and references.
+    """
+
+    # The namespace index for scoping the name:
+    namespace: int
+    # The name itself:
+    name: str
+
+
+# **************************************************************************************
