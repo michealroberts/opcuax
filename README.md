@@ -1,2 +1,2 @@
-# astral-uv-python-package-template
+# upcuax
 A hypermodern python package starter template with astral uv ruff and mypy

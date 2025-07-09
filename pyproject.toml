@@ -1,11 +1,25 @@
 [project]
-name = "astral-uv-python-package-template"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+name = "opcuax"
+version = "0.0.0"
+description = "A hypermodern, type-safe, zero-dependency Python library for building asynchronous, standards-compliant OPC UA clients and servers with full type annotations and minimal overhead."
 authors = [{ name = "michealroberts", email = "michael@observerly.com" }]
+maintainers = [{ name = "Michael Roberts", email = "michael@observerly.com" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.13",
+]
+readme = "README.md"
+license = { file = "LICENSE" }
 requires-python = ">=3.13"
 dependencies = []
+
+[project.urls]
+Source = "https://github.com/michealroberts/opcuax"
+Issues = "https://github.com/michealroberts/opcuax/issues"
+PullRequests = "https://github.com/michealroberts/opcuax/pulls"
+Discussions = "https://github.com/michealroberts/opcuax/discussions"
 
 [build-system]
 requires = ["hatchling"]
@@ -13,7 +27,6 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
-    "astropy>=7.0.1",
     "mypy>=1.15.0",
     "pre-commit>=4.1.0",
     "pytest>=8.3.4",
@@ -24,4 +37,4 @@ dev = [
 
 [tool.pytest.ini_options]
 pythonpath = [".", "src"]
-asyncio_default_fixture_loop_scope = ["session"]
+asyncio_default_fixture_loop_scope = "session"
