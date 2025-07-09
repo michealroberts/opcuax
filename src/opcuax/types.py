@@ -5,24 +5,20 @@
 
 # **************************************************************************************
 
-from .types import (
-    NodeId,
-)
+from typing import TypedDict
 
 # **************************************************************************************
 
-__version__ = "0.0.0"
 
-# **************************************************************************************
+class NodeId(TypedDict):
+    """
+    Uniquely identifies a node in the OPC UA address space.
+    """
 
-__license__ = "MIT"
+    # The namespace index for scoping the identifier:
+    namespace: int
+    # The identifier (numeric, string, or GUID) as a string:
+    identifier: str
 
-# **************************************************************************************
-
-__all__: list[str] = [
-    "__version__",
-    "__license__",
-    "NodeId",
-]
 
 # **************************************************************************************
