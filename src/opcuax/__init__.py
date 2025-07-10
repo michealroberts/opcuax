@@ -6,6 +6,7 @@
 # **************************************************************************************
 
 from .types import (
+    DataValue,
     NodeId,
     QualifiedName,
     StatusCode,
@@ -25,6 +26,7 @@ __license__ = "MIT"
 __all__: list[str] = [
     "__version__",
     "__license__",
+    "DataValue",
     "NodeId",
     "QualifiedName",
     "StatusCode",

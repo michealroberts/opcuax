@@ -69,3 +69,22 @@ class Variant(TypedDict, Generic[T]):
 
 
 # **************************************************************************************
+
+
+class DataValue(TypedDict, Generic[T]):
+    """
+    A DataValue represents a value with its quality and timestamps as defined in the
+    OPC UA specification.
+    """
+
+    # The actual data value, which is a Variant[T]:
+    value: Variant[T]
+    # The status code indicating the quality of the value:
+    status_code: StatusCode
+    # Optional source timestamp (in seconds since epoch):
+    source_timestamp: NotRequired[float]
+    # Optional server timestamp (in seconds since epoch):
+    server_timestamp: NotRequired[float]
+
+
+# **************************************************************************************
