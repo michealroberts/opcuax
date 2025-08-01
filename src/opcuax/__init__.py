@@ -6,6 +6,7 @@
 # **************************************************************************************
 
 from .enums import (
+    AttributeId,
     NodeClass,
     ReferenceTypeId,
 )
@@ -30,6 +31,7 @@ __license__ = "MIT"
 __all__: list[str] = [
     "__version__",
     "__license__",
+    "AttributeId",
     "DataValue",
     "NodeId",
     "NodeClass",

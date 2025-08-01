@@ -61,3 +61,49 @@ class ReferenceTypeId(IntEnum):
 
 
 # **************************************************************************************
+
+
+class AttributeId(IntEnum):
+    # Unique identifier used to locate the node in the address space:
+    NodeId = 1
+    # Classification of the node such as object, variable, or method:
+    NodeClass = 2
+    # Name used during browsing that is qualified by namespace to avoid ambiguity:
+    BrowseName = 3
+    # Human-readable name intended to be shown in user interfaces:
+    DisplayName = 4
+    # Text explaining the purpose or semantics of the node:
+    Description = 5
+    # Mask indicating which attributes clients are permitted to modify:
+    WriteMask = 6
+    # Mask indicating which attributes the current user context is permitted to modify:
+    UserWriteMask = 7
+    # Flag that indicates the node is abstract and cannot be instantiated directly:
+    IsAbstract = 8
+    # Flag that specifies whether a reference is symmetric in nature:
+    Symmetric = 9
+    # Localized name used for the inverse side of symmetric references:
+    InverseName = 10
+    # Flag ensuring that the reference hierarchy contains no cycles:
+    ContainsNoLoops = 11
+    # Bitmask specifying whether the node is allowed to emit events:
+    EventNotifier = 12
+    # Current data value held by the node when applicable:
+    Value = 13
+    # Identifier of the data type associated with the node's value:
+    DataType = 14
+    # Indicator of whether the value is scalar or has array dimensions:
+    ValueRank = 15
+    # Dimensions of the array when the value is an array:
+    ArrayDimensions = 16
+    # Default rights for reading or writing the node's value:
+    AccessLevel = 17
+    # Effective rights for the current user to read or write the value:
+    UserAccessLevel = 18
+    # Suggested minimum interval between sampling operations for the value:
+    MinimumSamplingInterval = 19
+    # Indicator of whether historical data collection is enabled for the node:
+    Historizing = 20
+
+
+# **************************************************************************************
