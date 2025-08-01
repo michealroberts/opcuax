@@ -12,15 +12,15 @@
         "ms-python.python",
         "ms-toolsai.jupyter",
         "tamasfe.even-better-toml"
+      ],
+      "recommendations": [
+        "charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "tamasfe.even-better-toml"
       ]
     },
-    "recommendations": [
-      "charliermarsh.ruff",
-      "ms-python.mypy-type-checker",
-      "ms-python.python",
-      "ms-toolsai.jupyter",
-      "tamasfe.even-better-toml"
-    ],
     "settings": {
       "[python]": {
         "editor.defaultFormatter": "charliermarsh.ruff",
@@ -46,7 +46,7 @@
       "ruff.fixAll": true,
       "ruff.importStrategy": "fromEnvironment",
       "ruff.lint.enable": true,
-      "ruff.organizeImports": true,
+      "ruff.organizeImports": true
     },
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.profiles.linux": {
@@ -56,7 +56,6 @@
     }
   },
   "forwardPorts": [],
-  "postStartCommand": "/bin/zsh",
   "runArgs": [
     "--network=host",
     "--privileged",
