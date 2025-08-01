@@ -5,6 +5,10 @@
 
 # **************************************************************************************
 
+from .enums import (
+    NodeClass,
+    ReferenceTypeId,
+)
 from .types import (
     DataValue,
     NodeId,
@@ -28,7 +32,9 @@ __all__: list[str] = [
     "__license__",
     "DataValue",
     "NodeId",
+    "NodeClass",
     "QualifiedName",
+    "ReferenceTypeId",
     "StatusCode",
     "Variant",
 ]
